@@ -35,6 +35,21 @@ options:
 ### 実行例
 
 ```sh
-python main.py /path/to/boot.json
-# /path/to/Combined.bin に結合されたバイナリファイルが出力されます。
+$ python main.py /path/to/boot.json
+
+>python main.py  D:\Data\Downloads\linux_2022_03_23\boot.json
+[17:52:18] INFO     Boot JSON Path: D:\Data\Downloads\linux_2022_03_23\boot.json                                                         main.py:68
+           INFO     Output File: D:\Data\Downloads\linux_2022_03_23\Combined.bin                                                         main.py:69
+           INFO     Initial Value: 0                                                                                                     main.py:70
+           INFO     Start Address: 0x0000000040000000                                                                                    main.py:71
+           INFO     End Address: 0x000000004139b400                                                                                      main.py:72
+           INFO     Total Size: 20558848 bytes                                                                                           main.py:73
+           INFO     0x0000000040000000 - 0x000000004072ebcc: 7531468 bytes  Image                                                        main.py:89
+           INFO     0x000000004072ebcc - 0x0000000040ef0000: 8131636 bytes  Fill with 0x00                                               main.py:83
+           INFO     0x0000000040ef0000 - 0x0000000040ef07cf: 1999 bytes     rv32.dtb                                                     main.py:89
+           INFO     0x0000000040ef07cf - 0x0000000040f00000: 63537 bytes    Fill with 0x00                                               main.py:83
+           INFO     0x0000000040f00000 - 0x0000000040f0d188: 53640 bytes    opensbi.bin                                                  main.py:89
+           INFO     0x0000000040f0d188 - 0x0000000041000000: 994936 bytes   Fill with 0x00                                               main.py:83
+           INFO     0x0000000041000000 - 0x000000004139b400: 3781632 bytes  rootfs.cpio                                                  main.py:89
+           INFO     Done. Output: D:\Data\Downloads\linux_2022_03_23\Combined.bin                                                        main.py:95
 ```
