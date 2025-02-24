@@ -1,0 +1,8 @@
+[project]
+name = "litex-multibinary-combiner"
+version = "0.1.0"
+description = "A tool to combine multiple LiteX binaries into a single binary"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = ["rich>=13.9.4"]
