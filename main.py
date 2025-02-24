@@ -59,9 +59,7 @@ def process_args(args):
     }
     # sort by value
     boot_conf: List[MemEntry] = sorted(boot_conf, key=lambda x: x.start)
-    start_addr: int = (
-        args.start_addr if args.start_addr is not None else boot_conf[0].start
-    )
+    start_addr: int = boot_conf[0].start
     end_addr: int = boot_conf[-1].end
     total_size: int = end_addr - start_addr
     assert total_size > 0, "Invalid total size"
@@ -109,12 +107,6 @@ def main():
         type=str,
         default=None,
         help="Path to the output directory (default: None)",
-    )
-    parser.add_argument(
-        "--start-addr",
-        type=int,
-        default=None,
-        help="Starting address (default: None)",
     )
     parser.add_argument(
         "--initial-value", type=int, default=0, help="Initial value (default: None)"

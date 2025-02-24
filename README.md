@@ -20,8 +20,6 @@ options:
   -h, --help            show this help message and exit
   --output-dir OUTPUT_DIR
                         Path to the output directory (default: None)
-  --start-addr START_ADDR
-                        Starting address (default: None)
   --initial-value INITIAL_VALUE
                         Initial value (default: None)
 ```
@@ -31,8 +29,6 @@ options:
 - `boot_json`: 結合するバイナリファイルの情報を記述した JSON ファイルのパス
 - `--output-dir`: 結合されたバイナリファイルの出力先ディレクトリのパス
   - 未指定の場合、 `boot_json` と同じディレクトリに出力されます
-- `--start-addr`: バイナリファイルの開始アドレス
-  - 未指定の場合、 `boot.json` に記述されたアドレスの内、最小のアドレスが使用されます
 - `--initial-value`: バイナリファイルの初期値
   - `boot.json` で定義されたエントリが存在しない場合に使用されます。デフォルトは 0
 
