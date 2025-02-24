@@ -36,8 +36,6 @@ options:
 
 ```sh
 $ python main.py /path/to/boot.json
-
->python main.py  D:\Data\Downloads\linux_2022_03_23\boot.json
 [17:52:18] INFO     Boot JSON Path: D:\Data\Downloads\linux_2022_03_23\boot.json                                                         main.py:68
            INFO     Output File: D:\Data\Downloads\linux_2022_03_23\Combined.bin                                                         main.py:69
            INFO     Initial Value: 0                                                                                                     main.py:70
